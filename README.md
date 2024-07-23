@@ -4,7 +4,7 @@ A simple game where you need to find the same bubble as given in "Hit" within a 
 
 ## Live Game
 
-You can play the live game [here](your-live-game-url).
+You can play the live game [here](https://aroult-govinda.github.io/Bubble-Game/).
 
 ## How to Play
 
@@ -16,30 +16,14 @@ You can play the live game [here](your-live-game-url).
 
 ## Screenshots
 
-![Game Start](path-to-your-screenshot-1)
+![Game Start](./start.png)
 *Description: Screenshot showing the game at the start.*
 
-![In-game](path-to-your-screenshot-2)
+![In-game](./progress.png)
 *Description: Screenshot showing the game in progress.*
 
-![Game Over](path-to-your-screenshot-3)
+![Game Over](./Game_over.png)
 *Description: Screenshot showing the game over screen.*
-
-## Running the Game Locally
-
-To run the game locally, follow these steps:
-
-1. Clone the repository:
-    ```bash
-    git clone your-repo-url
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd your-repo-directory
-    ```
-
-3. Open the `index.html` file in your web browser.
 
 ## Code Overview
 
