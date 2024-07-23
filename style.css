@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--pfc);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+:root {
+    --cont: rgb(20, 120, 101);
+    --pfc: rgb(18, 18, 18);
+    --bg: rgb(2, 56, 46);
+    --top: rgb(36, 190, 162);
+}
+
+#title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-wrap: nowrap;
+    color: var(--cont);
+}
+
+#title h1 {
+    text-shadow: 4px 4px 1px rgba(0, 44, 31, 0.461);
+}
+
+#container {
+    margin-top: 5vw;
+    width: 80%;
+    height: 80%;
+    border-radius: 1em;
+    background-color: var(--cont);
+    box-shadow: 10px 10px 1px rgba(0, 44, 31, 0.461);
+    overflow: hidden;
+}
+
+#top {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--top);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2.5vw;
+    /* color: aliceblue; */
+}
+
+.box {
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+.box button{
+    border: none;
+    width: 5em;
+    height: 3em;
+    border-radius: 1em;
+    box-shadow: -3px 3px 1px rgba(0, 44, 31, 0.461);;
+    font-weight: 900;
+    color: var(--top);
+    background-color: var(--bg);
+    transition: all ease 0.5s;
+    scale: 1.2;
+}
+
+.box button:hover{
+    cursor: pointer;
+    scale: 1;
+    box-shadow: none;
+}
+
+.box h4 {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: var(--bg);
+}
+
+.box .circ {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    color: aliceblue;
+    background-color: var(--bg);
+}
+
+
+#bottom {
+    width: 100%;
+    justify-content: center;
+    /* background-color: aqua; */
+    padding: 1vw;
+    display: flex;
+    gap: 2vh;
+    flex-wrap: wrap;
+    color: var(--bg);
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    font-weight: 900;
+    color: var(--bg);
+    background-color: var(--top);
+    transition: all ease 0.2s;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    color: var(--top);
+    background-color: var(--bg);
+}
+
+
+@media (max-width: 550px) {
+    #title {
+        font-size: 4vw;
+    }
+
+    #top {
+        /* flex-direction: column; */
+        width: 100%;
+        height: 16vh;
+        gap: 2vh;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
